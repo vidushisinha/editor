@@ -1,0 +1,125 @@
+@bgcolor: #333333;
+@cardColor: #36404a;
+
+.react-tooltip-lite {
+	background: #000;
+	color: white;
+}
+
+.react-tooltip-lite-arrow {
+	border-color: #000;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+}
+input {
+	background: #94a0ad;
+	border: none;
+	height: 32px;
+	border-radius: 10px;
+	padding: 3px 10px;
+	color: #fff;
+}
+input:focus {
+	outline: none;
+}
+.tool-icon {
+	color: rgba(255, 255, 255, 0.75);
+	width: 32px;
+	height: 32px;
+	display: flex;
+	border-radius: 8px;
+	margin-right: 10px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	&.selected {
+		background: #535a63;
+	}
+	&:hover {
+		background: #535a63;
+		color: whitesmoke;
+	}
+}
+
+.cm-s-material .CodeMirror-gutters,
+.cm-s-material.CodeMirror {
+	background: @cardColor !important;
+}
+.cm-s-material.CodeMirror {
+	border-radius: 8px;
+}
+.checkbox {
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	color: #999;
+	padding: 5px;
+}
+.checkbox:hover {
+	color: whitesmoke;
+	background: #535a63;
+	border-radius: 10px;
+}
+.log-set() {
+	width: 250px;
+	flex-shrink: 0;
+	margin-right: 12px;
+}
+
+.runjs {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	&__header {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		height: 42px;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		background: @cardColor;
+		.menu {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+	}
+	&__editor {
+		position: absolute;
+		top: 62px;
+		left: 10px;
+		bottom: 10px;
+		width: 650px;
+		border-radius: 8px;
+		background: @cardColor;
+		& > div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	&__preview {
+		position: absolute;
+		top: 62px;
+		right: 10px;
+		bottom: 10px;
+		left: 670px;
+		border-radius: 8px;
+		background: @cardColor;
+	}
+}
+
+.CodeMirror {
+	height: 100% !important;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
